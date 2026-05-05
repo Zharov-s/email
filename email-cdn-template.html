@@ -28,21 +28,59 @@
     .ExternalClass { width:100%; }
     .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
     .preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; overflow:hidden; mso-hide:all; }
+    .show-mobile { display:none; max-height:0; overflow:hidden; mso-hide:all; }
     @media screen and (max-width: 680px) {
       .container { width:100% !important; max-width:100% !important; }
       .mobile-px { padding-left:22px !important; padding-right:22px !important; }
       .mobile-py { padding-top:26px !important; padding-bottom:26px !important; }
       .mobile-stack { display:block !important; width:100% !important; max-width:100% !important; }
+      .mobile-two-col { display:table-cell !important; width:50% !important; max-width:50% !important; box-sizing:border-box !important; }
+      .mobile-two-col-left { padding-right:6px !important; }
+      .mobile-two-col-right { padding-left:6px !important; }
       .mobile-center { text-align:center !important; }
       .mobile-left { text-align:left !important; }
+      .mobile-hero-eyebrow { font-size:7px !important; line-height:11px !important; letter-spacing:.08em !important; }
+      .mobile-hero-eyebrow span { padding:0 !important; background-color:transparent !important; border-radius:0 !important; }
       .hero-title { font-size:32px !important; line-height:38px !important; }
       .section-title { font-size:24px !important; line-height:30px !important; }
       .mobile-fluid { width:100% !important; max-width:100% !important; height:auto !important; }
-      .btn-wrap { width:100% !important; }
-      .btn-link { display:block !important; width:100% !important; box-sizing:border-box !important; }
+      .mobile-button-row { text-align:center !important; font-size:0 !important; }
+      .btn-wrap { display:inline-table !important; width:40% !important; max-width:40% !important; table-layout:fixed !important; margin:0 1.5% !important; vertical-align:top !important; }
+      .btn-wrap td { display:table-cell !important; width:100% !important; max-width:100% !important; box-sizing:border-box !important; }
+      .btn-link { display:block !important; width:100% !important; max-width:100% !important; min-width:0 !important; padding:7px 2px !important; font-size:9px !important; line-height:12px !important; white-space:nowrap !important; box-sizing:border-box !important; }
+      .mobile-btn-second { margin:0 1.5% !important; }
+      .mobile-btn-gap { display:none !important; width:0 !important; height:0 !important; max-height:0 !important; overflow:hidden !important; }
       .spacer-mobile { height:14px !important; line-height:14px !important; }
       .card-gap { display:block !important; width:100% !important; height:16px !important; }
       .hide-mobile { display:none !important; max-height:0 !important; overflow:hidden !important; }
+      .desktop-formats { display:none !important; max-height:0 !important; overflow:hidden !important; }
+      .show-mobile.mobile-formats { display:table !important; width:100% !important; max-height:none !important; overflow:visible !important; mso-hide:none !important; }
+      .mobile-format-cell { display:table-cell !important; width:50% !important; max-width:50% !important; box-sizing:border-box !important; }
+      .mobile-format-pill { font-size:10px !important; line-height:13px !important; padding:7px 2px !important; white-space:normal !important; overflow-wrap:anywhere !important; word-break:normal !important; box-sizing:border-box !important; }
+      .mobile-ref-col { display:table-cell !important; width:50% !important; max-width:50% !important; box-sizing:border-box !important; }
+      .mobile-ref-left { padding-right:8px !important; }
+      .mobile-ref-right { padding-left:8px !important; }
+      .mobile-ref-gap { display:none !important; width:0 !important; height:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .mobile-object-card { border:0 !important; border-radius:0 !important; overflow:visible !important; }
+      .mobile-object-card img { width:100% !important; max-width:100% !important; border-radius:14px 14px 0 0 !important; }
+      .mobile-object-copy { padding:14px 10px 0 10px !important; }
+      .mobile-object-title { font-size:16px !important; line-height:20px !important; margin-bottom:10px !important; overflow-wrap:anywhere !important; }
+      .mobile-object-meta { font-size:12px !important; line-height:17px !important; margin-bottom:10px !important; color:#555555 !important; overflow-wrap:anywhere !important; }
+      .mobile-object-text { font-size:12px !important; line-height:18px !important; overflow-wrap:anywhere !important; }
+      .mobile-telegram-left { display:table-cell !important; width:58% !important; max-width:58% !important; padding:30px 12px 30px 24px !important; box-sizing:border-box !important; }
+      .mobile-telegram-right { display:table-cell !important; width:42% !important; max-width:42% !important; padding:30px 24px 30px 10px !important; box-sizing:border-box !important; }
+      .mobile-telegram-title { font-size:20px !important; line-height:25px !important; margin-bottom:14px !important; }
+      .mobile-telegram-text { font-size:13px !important; line-height:20px !important; margin-bottom:15px !important; }
+      .mobile-telegram-handle { font-size:15px !important; line-height:19px !important; margin-bottom:15px !important; overflow-wrap:anywhere !important; }
+      .mobile-telegram-btn { width:92% !important; max-width:92% !important; }
+      .mobile-telegram-btn .btn-link { padding:8px 3px !important; font-size:10px !important; line-height:13px !important; }
+      .mobile-telegram-qr { width:120px !important; max-width:100% !important; border-radius:8px !important; }
+      .mobile-footer-left { display:table-cell !important; width:50% !important; max-width:50% !important; box-sizing:border-box !important; }
+      .mobile-footer-right { display:table-cell !important; width:50% !important; max-width:50% !important; text-align:right !important; box-sizing:border-box !important; }
+      .mobile-footer-logo { width:145px !important; max-width:145px !important; }
+      .mobile-footer-text { font-size:13px !important; line-height:19px !important; margin-top:14px !important; }
+      .mobile-footer-contact { font-size:13px !important; line-height:20px !important; }
+      .mobile-footer-note { font-size:11px !important; line-height:17px !important; padding-top:18px !important; }
     }
   </style>
 </head>
@@ -86,7 +124,7 @@
                 <td class="mobile-px mobile-py" style="padding:34px 38px 34px 38px; background-color:#111111;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
                     <tr>
-                      <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#ffffff;">
+                      <td class="mobile-hero-eyebrow" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#ffffff;">
                         <span style="display:inline-block; padding:7px 11px; background-color:#b40000; border-radius:4px;">площади в аренду · ввод в эксплуатацию сентябрь 2026</span>
                       </td>
                     </tr>
@@ -123,7 +161,7 @@
                     </tr>
                     <tr><td height="26" style="height:26px; line-height:26px; font-size:0;">&nbsp;</td></tr>
                     <tr>
-                      <td>
+                      <td class="mobile-button-row">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap" style="display:inline-table; margin:0 !important;">
                           <tr>
                             <td align="center" bgcolor="#b40000" style="border-radius:4px;">
@@ -132,7 +170,7 @@
                             </td>
                           </tr>
                         </table>
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap" style="display:inline-table; margin:0 0 0 10px !important;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap mobile-btn-second" style="display:inline-table; margin:0 0 0 10px !important;">
                           <tr>
                             <td align="center" bgcolor="#111111" style="border-radius:4px;">
                               <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://abcport.ru/" style="height:48px;v-text-anchor:middle;width:184px;" arcsize="6%" strokecolor="#ffffff" fillcolor="#111111"><w:anchorlock/><center style="color:#ffffff;font-family:Arial, Helvetica, sans-serif;font-size:15px;font-weight:bold;">Смотреть объект</center></v:roundrect><![endif]-->
@@ -156,36 +194,36 @@
                 <td class="mobile-px" style="padding:0 38px 34px 38px; background-color:#ffffff;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
                     <tr>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 8px 14px 0;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-left" width="50%" valign="top" style="padding:0 8px 14px 0;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">аренда</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">Доступные площади</p></td></tr>
                         </table>
                       </td>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 0 14px 8px;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-right" width="50%" valign="top" style="padding:0 0 14px 8px;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">площадь</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">11 776 м²</p></td></tr>
                         </table>
                       </td>
                     </tr>
                     <tr>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 8px 14px 0;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-left" width="50%" valign="top" style="padding:0 8px 14px 0;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">класс</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">A+</p></td></tr>
                         </table>
                       </td>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 0 14px 8px;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-right" width="50%" valign="top" style="padding:0 0 14px 8px;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">мощность</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">1,5 МВт</p></td></tr>
                         </table>
                       </td>
                     </tr>
                     <tr>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 8px 0 0;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-left" width="50%" valign="top" style="padding:0 8px 0 0;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">аренда</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">light industrial · офис · showroom</p></td></tr>
                         </table>
                       </td>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 0 0 8px;">
+                      <td class="mobile-stack mobile-two-col mobile-two-col-right" width="50%" valign="top" style="padding:0 0 0 8px;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background:#f7f7f7; border:1px solid #ececec; border-radius:6px;">
                           <tr><td style="padding:18px; font-family:Arial, Helvetica, sans-serif;"><p style="font-size:12px; line-height:16px; font-weight:700; letter-spacing:.10em; text-transform:uppercase; color:#b40000; margin:0 0 7px 0;">пул</p><p style="font-size:17px; line-height:23px; font-weight:700; color:#111111; margin:0;">Ограниченный пул резидентов</p></td></tr>
                         </table>
@@ -206,7 +244,7 @@
                     </tr>
                     <tr>
                       <td style="padding:4px 26px 26px 26px;">
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="desktop-formats" style="width:100%;">
                           <tr>
                             <td class="mobile-stack" width="33.33%" style="padding:8px 8px 0 0;"><p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:10px 12px; margin:0; text-align:center;">Офисы</p></td>
                             <td class="mobile-stack" width="33.33%" style="padding:8px 8px 0 0;"><p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:10px 12px; margin:0; text-align:center;">Showroom / магазин</p></td>
@@ -216,6 +254,20 @@
                             <td class="mobile-stack" width="33.33%" style="padding:8px 8px 0 0;"><p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:10px 12px; margin:0; text-align:center;">Производственный блок</p></td>
                             <td class="mobile-stack" width="33.33%" style="padding:8px 8px 0 0;"><p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:10px 12px; margin:0; text-align:center;">Кафе / ресторан</p></td>
                             <td class="mobile-stack" width="33.33%" style="padding:8px 0 0 0;"><p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:10px 12px; margin:0; text-align:center;">Коворкинг</p></td>
+                          </tr>
+                        </table>
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="show-mobile mobile-formats" style="width:100%;">
+                          <tr>
+                            <td class="mobile-format-cell" width="50%" style="padding:6px 4px 0 0;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Офисы</p></td>
+                            <td class="mobile-format-cell" width="50%" style="padding:6px 0 0 4px;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Showroom / магазин</p></td>
+                          </tr>
+                          <tr>
+                            <td class="mobile-format-cell" width="50%" style="padding:8px 4px 0 0;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Производство + офис</p></td>
+                            <td class="mobile-format-cell" width="50%" style="padding:8px 0 0 4px;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Производственный блок</p></td>
+                          </tr>
+                          <tr>
+                            <td class="mobile-format-cell" width="50%" style="padding:8px 4px 0 0;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Кафе / ресторан</p></td>
+                            <td class="mobile-format-cell" width="50%" style="padding:8px 0 0 4px;"><p class="mobile-format-pill" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ffffff; background:#242424; border:1px solid #373737; border-radius:4px; padding:8px 5px; margin:0; text-align:center; white-space:nowrap;">Коворкинг</p></td>
                           </tr>
                         </table>
                       </td>
@@ -232,7 +284,7 @@
                       <td class="mobile-stack" valign="middle" style="padding:24px 22px; font-family:Arial, Helvetica, sans-serif; font-size:18px; line-height:25px; font-weight:700; color:#111111;">
                         Запросите презентацию и доступные площади в аренду в Промтехнопарке в Митино.
                       </td>
-                      <td class="mobile-stack" valign="middle" align="right" style="padding:0 22px 24px 22px;">
+                      <td class="mobile-stack mobile-button-row" valign="middle" align="right" style="padding:0 22px 24px 22px;">
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap" style="display:inline-table; margin:0 !important;">
                           <tr>
                             <td align="center" bgcolor="#b40000" style="border-radius:4px;">
@@ -241,8 +293,8 @@
                             </td>
                           </tr>
                         </table>
-                        <div style="height:10px; line-height:10px; font-size:0;">&nbsp;</div>
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap" style="display:inline-table; margin:0 !important;">
+                        <div class="mobile-btn-gap" style="height:10px; line-height:10px; font-size:0;">&nbsp;</div>
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap mobile-btn-second" style="display:inline-table; margin:0;">
                           <tr>
                             <td align="center" bgcolor="#ffffff" style="border-radius:4px;">
                               <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://abcport.ru/" style="height:46px;v-text-anchor:middle;width:170px;" arcsize="6%" strokecolor="#b40000" fillcolor="#ffffff"><w:anchorlock/><center style="color:#b40000;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;">Смотреть объекты</center></v:roundrect><![endif]-->
@@ -266,27 +318,27 @@
                 <td class="mobile-px" style="padding:0 38px 38px 38px; background-color:#ffffff;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
                     <tr>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 8px 0 0;">
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; border:1px solid #e6e6e6; border-radius:14px; overflow:hidden;">
+                      <td class="mobile-stack mobile-ref-col mobile-ref-left" width="50%" valign="top" style="padding:0 8px 0 0;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="mobile-object-card" style="width:100%; border:1px solid #e6e6e6; border-radius:14px; overflow:hidden;">
                           <tr><td><img src="{{ASSET_BASE_URL}}/object-nekrasovka.jpg" width="276" alt="Промышленный парк в Некрасовке" class="mobile-fluid" style="width:100%; max-width:276px; height:auto; display:block;"></td></tr>
                           <tr>
-                            <td style="padding:18px 18px 20px 18px; font-family:Arial, Helvetica, sans-serif;">
-                              <h3 style="margin:0 0 10px 0; font-size:19px; line-height:24px; font-weight:700; color:#111111;">Промышленный парк в Некрасовке</h3>
-                              <p style="margin:0 0 10px 0; font-size:14px; line-height:21px; color:#555555;">5 188,73 м² арендопригодной площади · 800 кВт</p>
-                              <p style="margin:0; font-size:14px; line-height:21px; color:#111111;">Аренда блоками или здание целиком. Продажа — только объект целиком.</p>
+                            <td class="mobile-object-copy" style="padding:18px 18px 20px 18px; font-family:Arial, Helvetica, sans-serif;">
+                              <h3 class="mobile-object-title" style="margin:0 0 10px 0; font-size:19px; line-height:24px; font-weight:700; color:#111111;">Промышленный парк в Некрасовке</h3>
+                              <p class="mobile-object-meta" style="margin:0 0 10px 0; font-size:14px; line-height:21px; color:#555555;">5 188,73 м² арендопригодной площади · 800 кВт</p>
+                              <p class="mobile-object-text" style="margin:0; font-size:14px; line-height:21px; color:#111111;">Аренда блоками или здание целиком. Продажа — только объект целиком.</p>
                             </td>
                           </tr>
                         </table>
                       </td>
-                      <td class="card-gap" style="display:none; font-size:0; line-height:0;">&nbsp;</td>
-                      <td class="mobile-stack" width="50%" valign="top" style="padding:0 0 0 8px;">
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; border:1px solid #e6e6e6; border-radius:14px; overflow:hidden;">
+                      <td class="card-gap mobile-ref-gap" style="display:none; font-size:0; line-height:0;">&nbsp;</td>
+                      <td class="mobile-stack mobile-ref-col mobile-ref-right" width="50%" valign="top" style="padding:0 0 0 8px;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="mobile-object-card" style="width:100%; border:1px solid #e6e6e6; border-radius:14px; overflow:hidden;">
                           <tr><td><img src="{{ASSET_BASE_URL}}/object-grekova.jpg" width="276" alt="Медицинское здание на ул. Грекова" class="mobile-fluid" style="width:100%; max-width:276px; height:auto; display:block;"></td></tr>
                           <tr>
-                            <td style="padding:18px 18px 20px 18px; font-family:Arial, Helvetica, sans-serif;">
-                              <h3 style="margin:0 0 10px 0; font-size:19px; line-height:24px; font-weight:700; color:#111111;">Медицинское здание на ул. Грекова</h3>
-                              <p style="margin:0 0 10px 0; font-size:14px; line-height:21px; color:#555555;">3 761,68 м² · метро «Медведково»</p>
-                              <p style="margin:0; font-size:14px; line-height:21px; color:#111111;">Аренда блоками или продажа здания целиком.</p>
+                            <td class="mobile-object-copy" style="padding:18px 18px 20px 18px; font-family:Arial, Helvetica, sans-serif;">
+                              <h3 class="mobile-object-title" style="margin:0 0 10px 0; font-size:19px; line-height:24px; font-weight:700; color:#111111;">Медицинское здание на ул. Грекова</h3>
+                              <p class="mobile-object-meta" style="margin:0 0 10px 0; font-size:14px; line-height:21px; color:#555555;">3 761,68 м² · метро «Медведково»</p>
+                              <p class="mobile-object-text" style="margin:0; font-size:14px; line-height:21px; color:#111111;">Аренда блоками или продажа здания целиком.</p>
                             </td>
                           </tr>
                         </table>
@@ -301,11 +353,11 @@
                 <td class="mobile-px" style="padding:0 38px 40px 38px; background-color:#ffffff;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%; background-color:#f8f1f1; border:1px solid #ead1d1; border-radius:16px;">
                     <tr>
-                      <td class="mobile-stack" valign="middle" style="padding:28px 24px 28px 24px; font-family:Arial, Helvetica, sans-serif;">
-                        <h2 class="section-title" style="margin:0 0 12px 0; font-size:26px; line-height:32px; font-weight:700; color:#111111;">Все обновления — в Telegram</h2>
-                        <p style="margin:0 0 18px 0; font-size:15px; line-height:23px; color:#333333;">Статусы готовности, доступные площади и новые предложения ABCENTRUM.</p>
-                        <p style="margin:0 0 22px 0; font-size:20px; line-height:24px; font-weight:700; color:#b40000;">@ABCENTRUM_DEV</p>
-                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap" style="margin:0 !important;">
+                      <td class="mobile-stack mobile-telegram-left" valign="middle" style="padding:28px 24px 28px 24px; font-family:Arial, Helvetica, sans-serif;">
+                        <h2 class="section-title mobile-telegram-title" style="margin:0 0 12px 0; font-size:26px; line-height:32px; font-weight:700; color:#111111;">Все обновления — в Telegram</h2>
+                        <p class="mobile-telegram-text" style="margin:0 0 18px 0; font-size:15px; line-height:23px; color:#333333;">Статусы готовности, доступные площади и новые предложения ABCENTRUM.</p>
+                        <p class="mobile-telegram-handle" style="margin:0 0 22px 0; font-size:20px; line-height:24px; font-weight:700; color:#b40000;">@ABCENTRUM_DEV</p>
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="btn-wrap mobile-telegram-btn" style="margin:0 !important;">
                           <tr>
                             <td align="center" bgcolor="#b40000" style="border-radius:4px;">
                               <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://t.me/abcentrum_dev" style="height:46px;v-text-anchor:middle;width:208px;" arcsize="6%" stroke="f" fillcolor="#b40000"><w:anchorlock/><center style="color:#ffffff;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;">Подписаться на Telegram</center></v:roundrect><![endif]-->
@@ -314,9 +366,9 @@
                           </tr>
                         </table>
                       </td>
-                      <td class="mobile-stack" valign="middle" align="center" style="padding:24px 24px 24px 0;">
+                      <td class="mobile-stack mobile-telegram-right" valign="middle" align="center" style="padding:24px 24px 24px 0;">
                         <a href="https://t.me/abcentrum_dev" target="_blank" style="display:block;">
-                          <img src="{{ASSET_BASE_URL}}/telegram-qr.png" width="150" alt="QR-код Telegram-канала ABCENTRUM" style="width:150px; max-width:150px; height:auto; border-radius:6px; display:block;">
+                          <img src="{{ASSET_BASE_URL}}/telegram-qr.png" width="150" alt="QR-код Telegram-канала ABCENTRUM" class="mobile-telegram-qr" style="width:150px; max-width:150px; height:auto; border-radius:6px; display:block;">
                         </a>
                       </td>
                     </tr>
@@ -329,11 +381,11 @@
                 <td class="mobile-px" style="padding:28px 38px 34px 38px; background-color:#111111;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
                     <tr>
-                      <td class="mobile-stack" valign="top" style="font-family:Arial, Helvetica, sans-serif;">
-                        <img src="{{ASSET_BASE_URL}}/logo-abcentrum.png" width="170" alt="ABCENTRUM" style="width:170px; max-width:170px; height:auto; display:block; background-color:#ffffff; border-radius:4px; padding:6px;">
-                        <p style="margin:16px 0 0 0; font-size:14px; line-height:21px; color:#d2d2d2;">Коммерческие объекты в Москве</p>
+                      <td class="mobile-stack mobile-footer-left" valign="top" style="font-family:Arial, Helvetica, sans-serif;">
+                        <img src="{{ASSET_BASE_URL}}/logo-abcentrum.png" width="170" alt="ABCENTRUM" class="mobile-footer-logo" style="width:170px; max-width:170px; height:auto; display:block; background-color:#ffffff; border-radius:4px; padding:6px;">
+                        <p class="mobile-footer-text" style="margin:16px 0 0 0; font-size:14px; line-height:21px; color:#d2d2d2;">Коммерческие объекты в Москве</p>
                       </td>
-                      <td class="mobile-stack" valign="top" align="right" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:21px; color:#d2d2d2;">
+                      <td class="mobile-stack mobile-footer-right mobile-footer-contact" valign="top" align="right" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:21px; color:#d2d2d2;">
                         <p style="margin:0 0 5px 0; font-weight:700; color:#ffffff;">Сергей Жаров</p>
                         <p style="margin:0 0 10px 0;"><a href="tel:+79505004830" style="color:#ffffff; text-decoration:none;">+7 950 500-48-30</a></p>
                         <p style="margin:0;"><a href="https://abcport.ru/" target="_blank" style="color:#ffffff; text-decoration:underline;">abcport.ru</a></p>
@@ -341,7 +393,7 @@
                     </tr>
                     <tr><td colspan="2" height="24" style="height:24px; line-height:24px; font-size:0;">&nbsp;</td></tr>
                     <tr>
-                      <td colspan="2" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:17px; color:#8b8b8b; border-top:1px solid #2c2c2c; padding-top:18px;">
+                      <td colspan="2" class="mobile-footer-note" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:17px; color:#8b8b8b; border-top:1px solid #2c2c2c; padding-top:18px;">
                         Вы получили письмо, потому что интересовались объектами ABCENTRUM. <a href="{{unsubscribe_url}}" target="_blank" style="color:#bdbdbd; text-decoration:underline;">Отписаться</a>
                       </td>
                     </tr>
